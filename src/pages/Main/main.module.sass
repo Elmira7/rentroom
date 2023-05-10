@@ -1,27 +1,46 @@
 @import "../../styles/color"
-@import "../../styles/fonts/fonts"
+@import "../../styles/fonts/stylesheet.css"
 .main
+  font-family: Gilroy
+  font-weight: 500
+
   &__first
     display: flex
     flex-direction: row
+    justify-content: center
+    margin: 0 23px
+    margin-top: 50px
 
     &__block
       display: flex
       flex-direction: column
+      margin-right: 15px
+      justify-content: center
+      text-align: center
+      padding: 0 40px
 
       &__one
+        color: #4D7D81
+        font-size: 3rem
+        margin-bottom: 20px
 
       &__second
         color: $colorMain
+        font-size: 1.2rem
+        margin-bottom: 50px
 
       &__button
-        color: $colorMain
-        background: linear-gradient(87.16deg, #CBECEE 33.65%, #E4EFFF 84.36%)
-        box-shadow: 4px 4px 1px rgba(60, 110, 114, 0.33)
-        border-radius: 50px
+        &__but
+          align-items: center
+          color: $colorMain
+          background: linear-gradient(87.16deg, #CBECEE 33.65%, #E4EFFF 84.36%)
+          box-shadow: 4px 4px 1px rgba(60, 110, 114, 0.33)
+          border-radius: 50px
+          padding: 2% 10%
+          font-size: 1.5rem
 
     &__img
-      &__girl
-        width: 40%
+      width: 450px
+  //float: right
 
 

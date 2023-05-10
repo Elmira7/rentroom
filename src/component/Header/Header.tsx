@@ -16,13 +16,13 @@ export const Header = () => {
 			</div>
 
 			<nav>
-				<NavLink to="/monitoring"
+				<NavLink to="/authorized/monitoring"
 					className={({isActive}) => cn(styles.text, isActive && styles.activeLink)}>Мониторинг</NavLink>
-				<NavLink to='/Appeals'
+				<NavLink to='/authorized/Appeals'
 					className={({isActive}) => cn(styles.text, isActive && styles.activeLink)}>Обращения</NavLink>
-				<NavLink to="/News"
+				<NavLink to="/authorized/News"
 					className={({isActive}) => cn(styles.text, isActive && styles.activeLink)}>Новости</NavLink>
-				<NavLink to="/Analytics"
+				<NavLink to="/authorized/Analytics"
 					className={({isActive}) => cn(styles.text, isActive && styles.activeLink)}>Аналитика</NavLink>
 			</nav>
 			<Account/>

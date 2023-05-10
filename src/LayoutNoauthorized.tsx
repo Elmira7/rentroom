@@ -1,14 +1,14 @@
 import React from "react"
 import "./App.css"
-import {Header} from "./component/Header/Header"
 import {Footer} from "./component/Footer/Footer"
 import {Outlet} from "react-router-dom"
 import styles from "./styles/styles.module.sass"
+import {HeaderNoAuthorized} from "./component/Header/HeaderNoAuthorized/HeaderNoAuthorized"
 
-export const Layout = () => {
+export const LayoutNoAuthorized = () => {
 	return (
 		<div className={styles.layout}>
-			<Header/>
+			<HeaderNoAuthorized/>
 			<main><Outlet/></main>
 			<Footer/>
 
