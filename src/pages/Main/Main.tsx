@@ -1,29 +1,23 @@
 import React from "react"
-import styles from "./main.module.sass"
-import girl_in_work from "../../images/girl_in_work.png"
-import laptop from "../../images/img.png"
-import {AboutUs} from "./AboutUs"
-import {Cooperation} from "./Cooperation"
-import {Advantages} from "./Advantages"
-import {Partners} from "./Partners"
+import {AboutYou} from "./components/AboutYou/AboutYou"
+import {Cooperation} from "./components/Cooperation/Cooperation"
+import {Partners} from "./components/Partners/Partners"
+import {Advantages} from "./components/Advantages/Advantages"
+import {AboutUs} from "./components/AboutUs/AboutUs"
+
 
 export const Main = () => {
 	return (
-		<div className={styles.main}>
+		<div>
+			<AboutYou/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
 			<AboutUs/>
 			<Cooperation/>
 			<Advantages/>
 			<Partners/>
-			{/*<div className={styles.main__second}>*/}
-			{/*	<div>*/}
-			{/*		<p>Все под контролем</p>*/}
-			{/*		<p>Удобный доступ к объектам и инструментам для работы</p>*/}
-			{/*	</div>*/}
-			{/*	<div>*/}
-
-			{/*		/<img alt={"laptop"} src={laptop}/>*/}
-			{/*	</div>*/}
-			{/*</div>*/}
 		</div>
 	)
 }

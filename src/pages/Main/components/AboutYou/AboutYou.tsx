@@ -1,8 +1,8 @@
 import React from "react"
-import styles from "./main.module.sass"
-import girl_in_work from "../../images/girl_in_work.png"
+import styles from "./AboutYou.module.sass"
+import girl_in_work from "../../../../images/girl_in_work.png"
 
-export const AboutUs = () => {
+export const AboutYou = () => {
 	return (
 		<div className={styles.main__first}>
 			<div className={styles.main__first__block}>

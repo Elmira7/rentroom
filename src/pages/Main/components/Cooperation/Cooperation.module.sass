@@ -1,0 +1,49 @@
+@import "../../../../styles/color"
+.main
+  margin-top: 70px
+  background: url("../../../../images/img_3.png") top right/180px no-repeat, url("../../../../images/img_4.png") bottom left/180px no-repeat
+
+  &__block
+    display: flex
+    justify-content: center
+    flex-direction: row
+    font-family: Gilroy
+
+    &__text
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+      &__first
+        color: $colorMain
+        font-weight: 500
+        font-size: 2rem
+        margin-bottom: 40px
+
+      &__second
+        color: $colorT
+        font-weight: 300
+        font-size: 1rem
+
+li
+  padding-bottom: 10px
+
+li::before
+  display: inline-block
+  width: 10px
+  height: 10px
+  background: $colorT
+  border-radius: 50%
+  content: ""
+  margin-right: 10px
+
+.img
+  width: 300px
+
+.left
+  margin-left: 100px
+
+.right
+  margin-right: 100px
+
+
