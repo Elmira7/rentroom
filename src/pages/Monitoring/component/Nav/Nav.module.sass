@@ -1,0 +1,35 @@
+@import "../../../../styles/color"
+.text
+  font-family: Gilroy
+  font-weight: 500
+  margin-right: 25px
+  color: $colorMain
+  font-size: 16px
+
+.activeLink
+  color: $colorMain
+
+nav
+  position: relative
+
+nav .text
+  position: relative
+
+nav .text::before
+  content: ""
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 0
+  margin-bottom: -2px
+  height: 1px
+  background-color: $colorMain
+  transition: width 0.3s ease-in-out
+
+
+nav .text:hover::before,
+nav .activeLink::before
+  width: 100%
+
+//.nav
+//  margin-bottom: 20px

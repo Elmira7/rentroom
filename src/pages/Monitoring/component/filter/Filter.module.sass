@@ -1,0 +1,51 @@
+@import "./../../../../styles/color"
+.block
+  //margin-left: 40px
+  font-family: Gilroy
+  font-weight: 500
+  box-shadow: 0 0 50px rgba(179, 186, 207, 0.25)
+  //width: 228px
+  padding: 10px 20px
+  margin-right: 20px
+  position: sticky
+
+  &__city
+    margin-bottom: 20px
+
+    &__text
+      color: $colorGrey
+      margin-bottom: 6px
+
+  &__but
+    color: #FFFFFF
+    text-align: center
+    background: $colorCheckbox
+    border-radius: 10px
+    padding: 7px 25px
+
+
+.select
+  color: $colorMain
+  border: 1px solid rgba(60, 110, 114, 0.26)
+  border-radius: 10px
+  padding: 5px 0 5px 15px
+
+
+select
+  appearance: none
+  outline: none
+
+select:not([multiple])
+  padding-right: 70px
+  background-repeat: no-repeat
+  background-position: calc(100% - 0.6em) 0.5em
+  background-size: 1em auto
+  background-image: url("../../../../images/doSprite/select.svg")
+
+
+select::-ms-expand
+  display: none
+
+.button
+  display: flex
+  justify-content: center

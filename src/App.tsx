@@ -11,6 +11,8 @@ import {Main} from "./pages/Main/Main"
 import {Account} from "./pages/Account/Account"
 import {ReviewsList} from "./pages/Account/component/reviews/ReviewsList"
 import {InformationList} from "./pages/Account/component/Information/InformationList"
+import {MyPremisesList} from "./pages/Monitoring/component/MyPremises/MyPremisesList"
+import {LeasedPremisesList} from "./pages/Monitoring/component/LeasedPremises/LeasedPremisesList"
 
 export const App = () => {
 	return (
@@ -21,7 +23,10 @@ export const App = () => {
 				</Route>
 
 				<Route path="/authorized" element={<LayoutAuthorized/>}>
-					<Route path='/authorized/Monitoring' element={<Monitoring/>}></Route>
+					<Route path='/authorized/Monitoring' element={<Monitoring/>}>
+						<Route path="/authorized/Monitoring/MyPremises" element={<MyPremisesList/>}></Route>
+						<Route path="/authorized/Monitoring/LeasedPremises" element={<LeasedPremisesList/>}></Route>
+					</Route>
 					<Route path='/authorized/Appeals' element={<Appeals/>}></Route>
 					<Route path='/authorized/News' element={<News/>}></Route>
 					<Route path='/authorized/Analytics' element={<Analytics/>}></Route>
