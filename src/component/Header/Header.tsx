@@ -22,8 +22,8 @@ export const Header = () => {
 					className={({isActive}) => cn(styles.text, isActive && styles.activeLink)}>Обращения</NavLink>
 				<NavLink to="/authorized/News"
 					className={({isActive}) => cn(styles.text, isActive && styles.activeLink)}>Новости</NavLink>
-				<NavLink to="/authorized/Analytics"
-					className={({isActive}) => cn(styles.text, isActive && styles.activeLink)}>Аналитика</NavLink>
+				<NavLink to="/authorized/Search"
+					className={({isActive}) => cn(styles.text, isActive && styles.activeLink)}>Поиск</NavLink>
 			</nav>
 			<Account/>
 		</div>

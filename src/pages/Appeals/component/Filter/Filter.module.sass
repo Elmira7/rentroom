@@ -1,0 +1,48 @@
+@import "../../../../styles/color"
+.main
+  box-shadow: 0 0 50px rgba(179, 186, 207, 0.25)
+  border-radius: 20px
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  width: 1000px
+  height: 40px
+  align-items: center
+
+  &__name
+
+    font-size: 16px
+    font-weight: 500
+    color: $colorMain
+
+  &__block
+    display: flex
+    flex-direction: row
+    gap: 18px
+
+.select
+  color: $colorMain
+  border: 1px solid rgba(60, 110, 114, 0.26)
+  border-radius: 10px
+  padding: 5px 0 5px 15px
+
+
+select
+  appearance: none
+  outline: none
+
+select:not([multiple])
+  padding-right: 120px
+  background-repeat: no-repeat
+  background-position: calc(100% - 0.6em) 0.5em
+  background-size: 1em auto
+  background-image: url("../../../../images/doSprite/select.svg")
+
+
+select::-ms-expand
+  display: none
+
+.button
+  display: flex
+  justify-content: center
+

@@ -1,7 +1,8 @@
 import React from "react"
 
-export const Analytics = () => {
+export const NotMyAppealArray = () => {
 	return (
 		<div></div>
 	)
+
 }

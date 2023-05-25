@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./Checkbox.module.sass"
-import {Checkbox, Props as CheckboxProps} from "./Checkbox"
+import {Checkbox, Props as CheckboxProps} from "../../../../../component/Checkbox/Checkbox"
+
 
 interface CheckboxArray {
     category: string

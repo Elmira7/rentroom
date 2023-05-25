@@ -1,8 +1,6 @@
 import {useRef, useState} from "react"
-import {UseModalHooks} from "./hooks/UseModalHooks"
-import {Portal} from "./Portal/Portal"
-import {Edit} from "../pages/Account/component/edit/Edit"
 import styles from "./Modal.module.sass"
+import {UseModalHooks} from "../hooks/UseModalHooks"
 
 interface Props {
     visible: boolean

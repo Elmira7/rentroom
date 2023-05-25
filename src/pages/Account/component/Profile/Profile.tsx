@@ -1,7 +1,6 @@
 import React, {useState} from "react"
 import styles from "./Profile.module.sass"
 import img from "../../../../images/avatar.svg"
-import {Modal} from "../../../../component/Modal"
 
 export const Profile = () => {
 	const [visible, setVisible] = useState(false)

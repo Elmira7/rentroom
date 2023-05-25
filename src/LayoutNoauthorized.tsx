@@ -1,5 +1,4 @@
 import React from "react"
-import "./App.css"
 import {Footer} from "./component/Footer/Footer"
 import {Outlet} from "react-router-dom"
 import styles from "./styles/styles.module.sass"
