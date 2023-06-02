@@ -4,6 +4,7 @@ import {Cooperation} from "./components/Cooperation/Cooperation"
 import {Partners} from "./components/Partners/Partners"
 import {Advantages} from "./components/Advantages/Advantages"
 import {AboutUs} from "./components/AboutUs/AboutUs"
+import {Login} from "./components/login/Login"
 
 
 export const Main = () => {
@@ -18,6 +19,7 @@ export const Main = () => {
 			<Cooperation/>
 			<Advantages/>
 			<Partners/>
+			<Login/>
 		</div>
 	)
 }

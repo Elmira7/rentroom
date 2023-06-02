@@ -1,0 +1,49 @@
+@import "../../../../styles/color"
+.main
+  max-width: 1150px
+  width: 100%
+  margin: 0 auto
+  display: flex
+  flex-direction: row
+  font-weight: 500
+
+  &__text
+    font-weight: 500
+    flex-direction: column
+
+    &__article
+      color: $colorMain
+      font-size: 75px
+
+
+    &__content
+      color: $colorT
+      font-size: 30px
+
+.form
+  display: flex
+  flex-direction: column
+
+  &__input input:not([type="checkbox"])
+    border: 1px solid rgba(60, 110, 114, 0.26)
+    border-radius: 13px
+    width: 310px
+    height: 50px
+    margin-top: 20px
+    padding-left: 15px
+
+  &__errors
+    color: red
+    margin-left: 15px
+    margin-top: 5px
+
+  &__but
+    background: linear-gradient(87.16deg, #CBECEE 33.65%, #E4EFFF 84.36%)
+    box-shadow: 2.11429px 2.11429px 0.528571px rgba(60, 110, 114, 0.33)
+    border-radius: 13.2143px
+    width: 310px
+    height: 40px
+    margin-top: 30px
+    color: $colorMain
+    font-size: 20px
+

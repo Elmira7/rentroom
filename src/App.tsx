@@ -12,6 +12,8 @@ import {InformationList} from "./pages/Account/component/Information/Information
 import {MyPremisesList} from "./pages/Monitoring/component/MyPremises/MyPremisesList"
 import {LeasedPremisesList} from "./pages/Monitoring/component/LeasedPremises/LeasedPremisesList"
 import {Search} from "./pages/Search/Search"
+import {NotMyAppealList} from "./pages/Appeals/component/NotMyAppeals/NotMyAppealList"
+import {MyAppealList} from "./pages/Appeals/component/MyAppeals/MyAppealList"
 
 export const App = () => {
 	return (
@@ -26,7 +28,10 @@ export const App = () => {
 						<Route path="/authorized/Monitoring/MyPremises" element={<MyPremisesList/>}></Route>
 						<Route path="/authorized/Monitoring/LeasedPremises" element={<LeasedPremisesList/>}></Route>
 					</Route>
-					<Route path='/authorized/Appeals' element={<Appeals/>}></Route>
+					<Route path='/authorized/Appeals' element={<Appeals/>}>
+						<Route path='/authorized/Appeals' element={<NotMyAppealList/>}></Route>
+						<Route path='/authorized/Appeals/My' element={<MyAppealList/>}></Route>
+					</Route>
 					<Route path='/authorized/News' element={<News/>}></Route>
 					<Route path='/authorized/Search' element={<Search/>}></Route>
 					<Route path='/authorized/Account' element={<Account/>}>

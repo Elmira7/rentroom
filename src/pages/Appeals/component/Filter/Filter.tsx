@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./Filter.module.sass"
 import {Checkbox} from "../../../../component/Checkbox/Checkbox"
+import {NavLink} from "react-router-dom"
 
 export const Filter = () => {
 	return (
@@ -14,7 +15,7 @@ export const Filter = () => {
 					<option>Павильон</option>
 				</select>
 			</div>
-			<Checkbox name={"отправленные"}/>
+			<NavLink to='/authorized/Appeals/My'><Checkbox name={"отправленные"}/></NavLink>
 			<div className={styles.main__block}>
 				<Checkbox name={"решен"}/>
 				<Checkbox name={"на рассмотрении"}/>
