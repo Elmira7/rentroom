@@ -4,7 +4,6 @@ import {LayoutAuthorized} from "./LayoutAuthorized"
 import {Monitoring} from "./pages/Monitoring/Monitoring"
 import {Appeals} from "./pages/Appeals/Appeals"
 import {News} from "./pages/News/News"
-import {LayoutNoAuthorized} from "./LayoutNoauthorized"
 import {Main} from "./pages/Main/Main"
 import {Account} from "./pages/Account/Account"
 import {ReviewsList} from "./pages/Account/component/reviews/ReviewsList"
@@ -19,9 +18,7 @@ export const App = () => {
 	return (
 		<div>
 			<Routes>
-				<Route path='/' element={<LayoutNoAuthorized/>}>
-					<Route path='/Main' element={<Main/>}></Route>
-				</Route>
+				<Route path='/' element={<Main/>}></Route>
 
 				<Route path="/authorized" element={<LayoutAuthorized/>}>
 					<Route path='/authorized/Monitoring' element={<Monitoring/>}>

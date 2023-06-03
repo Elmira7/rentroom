@@ -1,5 +1,6 @@
 import React from "react"
 import {MyAppeal, MyAppealProps} from "./MyAppeal"
+import styles from "./MyAppeals.module.sass"
 
 interface MyAppealArrayProps {
     NotMyAppeal: Array<MyAppealProps>
@@ -7,7 +8,7 @@ interface MyAppealArrayProps {
 
 export const MyAppealArray = (props: MyAppealArrayProps) => {
 	return (
-		<div>
+		<div className={styles.array}>
 			{props.NotMyAppeal.map((props: MyAppealProps, index: number) =>
 				<MyAppeal
 					key={index}

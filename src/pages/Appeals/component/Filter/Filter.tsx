@@ -15,7 +15,7 @@ export const Filter = () => {
 					<option>Павильон</option>
 				</select>
 			</div>
-			<NavLink to='/authorized/Appeals/My'><Checkbox name={"отправленные"}/></NavLink>
+			{/*<NavLink to='/authorized/Appeals/My'><Checkbox name={"отправленные"}/></NavLink>*/}
 			<div className={styles.main__block}>
 				<Checkbox name={"решен"}/>
 				<Checkbox name={"на рассмотрении"}/>

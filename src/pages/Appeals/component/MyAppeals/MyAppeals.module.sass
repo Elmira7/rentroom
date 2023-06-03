@@ -1,0 +1,73 @@
+@import "../../../../styles/color"
+.card
+  font-weight: 500
+  background: white
+  box-shadow: 0 0 50px rgba(179, 186, 207, 0.25)
+  border-radius: 20px
+  width: 500px
+  height: 141px
+  display: flex
+  flex-direction: row
+  padding: 15px
+
+  &__images
+    margin-right: 20px
+    display: flex
+    align-items: center
+
+  &__content
+    &__heading
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+      &__name
+        color: $colorMain
+        font-size: 18px
+
+      &__status
+        color: $colorRed
+
+      &__but
+        color: white
+        background: $colorCheckbox
+        width: 100px
+        height: 26px
+        border-radius: 4px
+        font-size: 13px
+
+    &__text
+      font-size: 13px
+      display: flex
+      flex-direction: row
+
+      &__grey
+        font-size: 13px
+        color: $colorGrey
+
+        &:not(:last-child)
+          margin-top: 16px
+          margin-bottom: 10px
+
+
+.img
+  width: 80px
+  align-items: center
+
+.array
+  display: flex
+  flex-wrap: wrap
+  gap: 23px
+  justify-content: center
+
+.resolved
+  color: rgba($colorStatus, 0.35)
+
+.unresolved
+  color: $colorRed
+
+.margin
+  margin-right: 20px
+
+.theme
+  margin-right: 40px

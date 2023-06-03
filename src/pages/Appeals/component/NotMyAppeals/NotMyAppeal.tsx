@@ -1,4 +1,6 @@
 import React from "react"
+import styles from "../MyAppeals/MyAppeals.module.sass"
+import cn from "classnames"
 
 export interface NotMyAppealProps {
     img: string
@@ -12,25 +14,33 @@ export interface NotMyAppealProps {
 
 export const NotMyAppeal = (props: NotMyAppealProps) => {
 	return (
-		<div>
-			<div>
-				<img alt={"фото пользователя"} src={props.img}/>
+		<div className={styles.card}>
+			<div className={styles.card__images}>
+				<img className={styles.img} alt={"фото пользователя"} src={props.img}/>
 			</div>
-			<div>
-				<span>{props.name}</span>
-				<span>{props.status}</span>
+			<div className={styles.card__content}>
+				<div className={styles.card__content__heading}>
+					<span className={styles.card__content__heading__name}>{props.name}</span>
+					<span
+						className={cn(styles.card__content__heading__status, props.status === "решен" ? styles.resolved : styles.unresolved)}>{props.status}</span>
+					<button
+						className={styles.card__content__heading__but}>{props.status === "решен" ? "Удалить" : "Решить"}</button>
+				</div>
+				<div className={styles.card__content__text}>
+					<div className={styles.theme}>
+						<div className={styles.card__content__text__grey}>Тема</div>
+						<div className={styles.card__content__text__grey
 
-				<button>{props.status === "решен" ? "Удалить" : "Решить"}</button>
-			</div>
-			<div>
-				<span>Тема</span>
-				<span>{props.theme}</span>
-			</div>
-			<div>
-				<span>Сообщение</span>
-				<span>{props.message}</span>
-			</div>
+						}>Сообщение
+						</div>
+					</div>
 
+					<div className={styles.props}>
+						<div className={styles.card__content__text__grey}>{props.theme}</div>
+						<div className={styles.card__content__text__grey}>{props.message}</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	)
 
