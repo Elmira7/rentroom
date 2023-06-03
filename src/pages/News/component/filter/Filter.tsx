@@ -7,14 +7,14 @@ export const Filter = () => {
 		<div className={styles.main}>
 			<div className={styles.main__name}>Объект</div>
 			<div>
-				<select>
+				<select className={styles.select}>
 					<option>Все</option>
 					<option>Объект 1</option>
 					<option>Объект 2</option>
 					<option>Объект 3</option>
 				</select>
 			</div>
-			<div>
+			<div className={styles.check}>
 				<Checkbox name={"только новые"}/>
 			</div>
 		</div>

@@ -1,18 +1,32 @@
 @import "../../../../styles/color"
 .main
-  font-family: Gilroy
   font-weight: 500
   display: flex
   flex-direction: row
   align-items: center
-  box-shadow: 0px 0px 50px rgba(179, 186, 207, 0.25)
+  box-shadow: 0 0 50px rgba(179, 186, 207, 0.25)
   border-radius: 20px
   width: 730px
   height: 45px
   background: white
+  padding: 0 25px 0 50px
 
   &__name
     color: $colorMain
     font-size: 18px
-    margin: 0 30px 0 55px
+    margin-right: 30px
+//margin: 0 30px 0 55px
 
+.select
+  color: $colorMain
+  border: 1px solid rgba(60, 110, 114, 0.26)
+  border-radius: 10px
+  padding: 5px 0 5px 15px
+
+
+select
+  appearance: none
+  outline: none
+
+.check
+  margin-left: auto
