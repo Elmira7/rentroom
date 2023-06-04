@@ -4,6 +4,7 @@ import "./index.sass"
 import {App} from "./App"
 import {BrowserRouter} from "react-router-dom"
 import "./styles/reset.sass"
+import {YMaps} from "@pbe/react-yandex-maps"
 
 
 const root = ReactDOM.createRoot(
@@ -13,6 +14,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
 	<BrowserRouter>
-		<App/>
+		<YMaps query={{apikey: "7d4163bf-88bd-493d-a4b1-3b0a3ec98898"}}>
+			<App/>
+		</YMaps>
 	</BrowserRouter>
 )

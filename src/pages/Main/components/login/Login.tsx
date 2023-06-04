@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./Login.module.sass"
 import {LoginForm} from "./LoginForm"
 
+
 export const Login = () => {
 	return (
 		<div className={styles.main}>
@@ -16,6 +17,7 @@ export const Login = () => {
 			<div className={styles.main__form}>
 				<LoginForm/>
 			</div>
+
 		</div>
 	)
 }

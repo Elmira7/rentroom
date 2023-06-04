@@ -7,12 +7,12 @@ const notifications = [
 	{
 		id: "ffgf-gfdgd-gfdgdf-gdfd",
 		img: "/images/news/img.png",
-		title: "Собака",
+		title: "Объект #1",
 		owner: {
 			id: "bgfb-gfdf-gdfd",
-			name: "Boris",
+			name: "Владислав Влад",
 		},
-		message: "найдена собака",
+		message: "оплата аренды",
 		date: "2022-11-22",
 		time: "11:22",
 		missing: {
@@ -21,7 +21,7 @@ const notifications = [
 			info: "Потерялася собачка",
 			image: img
 		},
-		sum: "1900"
+		sum: "+ 18 560"
 	},
 	{
 		id: "ffgd-gfdgd-gfdgdf-gdfd",

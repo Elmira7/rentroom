@@ -1,0 +1,125 @@
+.map_container
+  margin: auto
+  width: 100%
+  height: 90vh
+  display: block
+
+
+.missing
+  display: flex
+  flex-direction: column
+  position: fixed
+  top: 15%
+  left: 5%
+  height: 75%
+  width: 27%
+  background-color: #FAFBFC
+  border-radius: 20px
+  box-shadow: 0px 0px 16px -5px rgba(34, 60, 80, 0.15)
+  min-width: 350px
+
+  &__container
+    width: 100%
+    height: 90%
+    overflow: scroll
+
+    &::-webkit-scrollbar
+      width: 0
+
+  &__filter
+    display: flex
+    justify-content: space-between
+    width: 90%
+    height: 7%
+    margin: 10px auto 0 auto
+
+    &__display
+      display: flex
+      align-items: center
+      width: 70%
+      height: 100%
+      background-color: white
+      border-radius: 15px
+      box-shadow: 0px 0px 16px -5px rgba(34, 60, 80, 0.15)
+
+      p
+        white-space: nowrap
+        overflow: hidden
+        padding-right: 3px
+        text-overflow: ellipsis
+        max-width: 90%
+        color: #9A9A9A
+        margin-left: 10px
+
+
+    &__button
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 28%
+      background-color: #C08A90
+      color: white
+      border-radius: 10px
+      cursor: pointer
+
+  &__create_button
+    text-align: center
+    width: 90%
+    margin: auto
+    margin-bottom: 10px
+    height: fit-content
+    font-size: 1.2em
+    background: linear-gradient(87.16deg, #F9B0B8 33.65%, #FDD0D0 84.36%)
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    color: #624545
+    padding: 11px 30px
+    cursor: pointer
+    overflow: hidden
+    text-overflow: ellipsis
+
+
+.modal
+  min-width: 75vh
+  width: fit-content
+  min-height: 40vh
+  height: fit-content
+  display: flex
+  justify-content: center
+  font-size: 0.9em
+
+
+  &__left
+
+
+    &__image
+      width: 25vh
+      height: 25vh
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+      border-radius: 15px
+
+
+  &__right
+    width: 55%
+    display: flex
+    flex-direction: column
+    margin-left: 20px
+
+    &__line
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      width: 100%
+      height: fit-content
+
+      &__key
+        max-width: 30%
+
+      &__value
+        max-width: 60%
+
+
+
+

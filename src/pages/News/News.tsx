@@ -8,6 +8,7 @@ export const News: React.FC = () => {
 
 	return (
 		<div className={styles.main}>
+			<div className={styles.article}>Новости</div>
 			<div className={styles.filter}>
 				<Filter/>
 			</div>
