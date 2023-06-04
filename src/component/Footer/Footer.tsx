@@ -1,5 +1,7 @@
 import React from "react"
 import styles from "./Footer.module.sass"
+import icon from "../../images/icon.svg"
+
 
 export const Footer = () => {
 	return (
@@ -10,8 +12,19 @@ export const Footer = () => {
 					<span className={styles.footer__subscription__text__white}>на наши обновления, чтобы быть в курсе всех последних новостей</span>
 				</div>
 
-				<input className={styles.footer__subscription__input}/>
+				<input placeholder={"Ваша почта.."} className={styles.footer__subscription__input}/>
 				<button className={styles.footer__subscription__button}>Подписка</button>
+				<div className={styles.row}>
+					<div className={styles.bottom}>
+						<div className={styles.bl}>
+							<img alt={"icon"} src={icon}/>
+							<span className={styles.bottom__name}>RentRoom</span>
+						</div>
+						<div className={styles.bottom__text}>RentRoom 2023. All right reserved</div>
+					</div>
+					<img className={styles.img} src={"/images/img_1.png"}/>
+				</div>
+
 			</div>
 			<div className={styles.footer__col}>
 				<div className={styles.footer__col__main}>Карта сайта</div>
