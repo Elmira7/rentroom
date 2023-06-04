@@ -5,40 +5,63 @@
   border-radius: 15px
   margin-top: 6px
   width: 500px
-  height: 73px
+  height: 70px
   display: flex
   flex-direction: row
+  font-weight: 500
 
   &__image
 
   &__info
+    width: 100%
+    padding: 10px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
     &__left
+      color: $colorMain
       display: flex
       flex-direction: column
+      justify-content: space-between
+      //margin-right: 45px
 
       &__header
+        font-size: 20px
 
       &__action
+        font-size: 12px
 
     &__center
+      color: $colorMain
+      display: flex
+      align-items: center
+      font-size: 22px
+    // margin-right: 80px
 
     &__right
       display: flex
       flex-direction: column
+      //margin-right: auto
+      color: $colorGrey
+      font-size: 12px
+      align-items: end
+      justify-content: space-between
+
+
+      &__name
 
       &__time
 
 .img
-  width: 73px
+  width: 78px
 
 
 .date
-  margin: 18px 0
   display: flex
   background: white
   border: 0.5px solid rgba(black, 0.17)
   border-radius: 10px
-  font-family: Gilroy
   font-weight: 500
   font-size: 14px
   color: $colorGrey
@@ -47,4 +70,4 @@
   justify-content: center
   width: 106px
   height: 22px
-
+  margin: 18px auto

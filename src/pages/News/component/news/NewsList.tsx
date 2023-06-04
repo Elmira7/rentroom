@@ -7,7 +7,6 @@ const notifications = [
 	{
 		id: "ffgf-gfdgd-gfdgdf-gdfd",
 		img: "/images/news/img.png",
-		title: "Объект #1",
 		owner: {
 			id: "bgfb-gfdf-gdfd",
 			name: "Владислав Влад",
@@ -17,47 +16,39 @@ const notifications = [
 		time: "11:22",
 		missing: {
 			id: 1,
-			city: "Kazan",
-			info: "Потерялася собачка",
-			image: img
+			info: "Объект #1",
 		},
 		sum: "+ 18 560"
 	},
 	{
 		id: "ffgd-gfdgd-gfdgdf-gdfd",
 		img: "/images/news/img.png",
-		title: "Кошка",
 		owner: {
 			id: "bgfs-gfdf-gdfd",
 			name: "Влад влад"
 		},
-		message: "найдена кошка",
+		message: "оплата аренды",
 		date: "2022-11-22",
 		time: "12:22",
 		missing: {
 			id: 2,
-			city: "Kazan",
-			info: "Потерялася собачка",
-			image: img
+			info: "Объект #1"
 		},
 		sum: "1900"
 	},
 	{
 		id: "ffgо-gfdgd-gfdgdf-gdfd",
 		img: "/images/news/img.png",
-		title: "Енот",
 		owner: {
 			id: "bgfs-gfdf-gdfd",
 			name: "Влад влад"
 		},
-		message: "найден енот",
+		message: "оплата аренды",
 		date: "2022-11-21",
 		time: "12:22",
 		missing: {
 			id: 3,
-			city: "Kazan",
-			info: "Потерялася собачка",
-			image: img
+			info: "Объект #1"
 		},
 		sum: "1900"
 	}
@@ -79,13 +70,11 @@ export const NewsList = () => {
 			{Object.keys(notificationArray).map((date) => {
 				// eslint-disable-next-line react/jsx-key
 				return (<div>
-					<div>
-						<div className={styles.date}> {date} </div>
-						{notificationArray[date].map((notification: any, index: number) => (
-							<NewsComponent
-								key={index}
-								notification={notification}/>))}
-					</div>
+					<div className={styles.date}> {date} </div>
+					{notificationArray[date].map((notification: any, index: number) => (
+						<NewsComponent
+							key={index}
+							notification={notification}/>))}
 				</div>)
 			})
 			}
