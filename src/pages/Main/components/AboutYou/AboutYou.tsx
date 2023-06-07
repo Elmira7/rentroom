@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./AboutYou.module.sass"
-import girl_in_work from "../../../../images/girl_in_work.png"
 
 export const AboutYou = () => {
 	return (
@@ -11,12 +10,12 @@ export const AboutYou = () => {
                     предпринимателей и частных лиц
 				</div>
 				<div className={styles.main__first__block__button}>
-					<button className={styles.main__first__block__button__but}>Начать работу</button>
+					<button type={"button"} className={styles.main__first__block__button__but}>Начать работу</button>
 				</div>
 			</div>
 
 			<div>
-				<img className={styles.main__first__img} alt={"girl_in_work"} src={girl_in_work}/>
+				<img className={styles.main__first__img} alt={"girl_in_work"} src={"/images/girl_in_work.png"}/>
 			</div>
 		</div>
 	)

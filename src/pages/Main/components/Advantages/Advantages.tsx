@@ -8,18 +8,19 @@ import styles from "./Advanteges.module.sass"
 export const Advantages = () => {
 	return (
 		<div className={styles.main}>
-			<div className={styles.main__text}>Почему стоит выбрать именно нас?</div>
-			<Swiper
-				pagination={{
-					dynamicBullets: true,
-				}}
-				modules={[Pagination]}
-				className={styles.mySwiper}
-			>
-				<SwiperSlide>Slide 1</SwiperSlide>
-				<SwiperSlide>Slide 2</SwiperSlide>
-				<SwiperSlide>Slide 3</SwiperSlide>
-			</Swiper>
+			{/*<div className={styles.main__text}>Почему стоит выбрать именно нас?</div>*/}
+			{/*<Swiper*/}
+			{/*	pagination={{*/}
+			{/*		dynamicBullets: true,*/}
+			{/*	}}*/}
+			{/*	modules={[Pagination]}*/}
+			{/*	className={styles.mySwiper}*/}
+			{/*>*/}
+			{/*	<SwiperSlide>Slide 1</SwiperSlide>*/}
+			{/*	<SwiperSlide>Slide 2</SwiperSlide>*/}
+			{/*	<SwiperSlide>Slide 3</SwiperSlide>*/}
+			{/*</Swiper>*/}
+			<img className={styles.img} alt={"здесь не должно быть картинки"} src={"/images/doSstr/img_7.png"}/>
 		</div>
 	)
 }

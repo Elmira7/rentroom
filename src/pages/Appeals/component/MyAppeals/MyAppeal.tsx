@@ -24,7 +24,7 @@ export const MyAppeal = (props: MyAppealProps) => {
 					<span className={styles.card__content__heading__name}>{props.name}</span>
 					<span
 						className={cn(styles.card__content__heading__status, props.status === "решен" ? styles.resolved : styles.unresolved)}>{props.status}</span>
-					<button className={styles.card__content__heading__but}>Удалить</button>
+					<button type={"button"} className={styles.card__content__heading__but}>Удалить</button>
 				</div>
 
 				<div className={styles.card__content__text}>

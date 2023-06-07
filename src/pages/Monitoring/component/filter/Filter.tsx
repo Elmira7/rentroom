@@ -27,7 +27,7 @@ export const Filter = () => {
 			<CheckboxArray category={"Задолжность"} CheckboxArray={checkboxes2}/>
 			<CheckboxArray category={"Запросы"} CheckboxArray={checkboxes3}/>
 			<div className={styles.button}>
-				<button className={styles.block__but}>Фильтр</button>
+				<button type={"button"} className={styles.block__but}>Фильтр</button>
 			</div>
 
 		</div>

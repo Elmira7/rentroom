@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./AboutUs.module.sass"
-import laptop from "../../../../images/img.png"
 
 export const AboutUs = () => {
 	return (
@@ -10,7 +9,7 @@ export const AboutUs = () => {
 				<span className={styles.main__text__second}>Удобный доступ к объектам и инструментам для работы</span>
 			</div>
 			<div>
-				<img className={styles.img} alt={"laptop"} src={laptop}/>
+				<img className={styles.img} alt={"laptop"} src={"/images/img.png"}/>
 			</div>
 		</div>
 	)

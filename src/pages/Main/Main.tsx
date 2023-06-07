@@ -6,10 +6,7 @@ import {Advantages} from "./components/Advantages/Advantages"
 import {AboutUs} from "./components/AboutUs/AboutUs"
 import {Login} from "./components/login/Login"
 import styles from "../../component/Header/Header.module.sass"
-import icon from "../../images/icon.svg"
 import cn from "classnames"
-import {NavLink} from "react-router-dom"
-import {Header} from "../../component/Header/Header"
 import {Footer} from "../../component/Footer/Footer"
 
 
@@ -32,45 +29,54 @@ export const Main = () => {
 
 	return (
 		<div className={styles.body}>
-			<header className={cn(styles.header, styles.white)}>
-				<div className={styles.header__icon}>
-					<div>
-						<img src={icon}/>
+			<div className={styles.qw}>
+				<header className={cn(styles.header, styles.white)}>
+					<div className={styles.header__icon}>
+						<div>
+							<img alt={"icon"} src={"/images/icon.svg"}/>
+						</div>
+						<div className={styles.header__icon__text}>RentRoom</div>
 					</div>
-					<div className={styles.header__icon__text}>RentRoom</div>
-				</div>
-				<div className={styles.but}>
-					<button className={styles.button} onClick={() => scrollToRef(aboutYouRef)}>O нас</button>
-					<button className={styles.button} onClick={() => scrollToRef(cooperationRef)}>Сотрудничество
-					</button>
-					<button className={styles.button} onClick={() => scrollToRef(advantagesRef)}>Преимущества</button>
-					<button className={styles.button} onClick={() => scrollToRef(partnersRef)}>Партнеры</button>
-					<button className={styles.button} onClick={() => scrollToRef(loginRef)}>Войти</button>
+					<div className={styles.but}>
+						<button type={"button"} className={styles.button} onClick={() => scrollToRef(aboutYouRef)}>O нас
+						</button>
+						<button type={"button"} className={styles.button}
+							onClick={() => scrollToRef(cooperationRef)}>Сотрудничество
+						</button>
+						<button type={"button"} className={styles.button}
+							onClick={() => scrollToRef(advantagesRef)}>Преимущества
+						</button>
+						<button type={"button"} className={styles.button}
+							onClick={() => scrollToRef(partnersRef)}>Партнеры
+						</button>
+						<button type={"button"} className={styles.button} onClick={() => scrollToRef(loginRef)}>Войти
+						</button>
 
-				</div>
+					</div>
 
-			</header>
-			<div ref={aboutYouRef}>
-				<AboutYou/>
-			</div>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<div>
-				<AboutUs/>
-			</div>
-			<div ref={cooperationRef}>
-				<Cooperation/>
-			</div>
-			<div ref={advantagesRef}>
-				<Advantages/>
-			</div>
-			<div ref={partnersRef}>
-				<Partners/>
-			</div>
-			<div ref={loginRef}>
-				<Login/>
+				</header>
+				<div ref={aboutYouRef}>
+					<AboutYou/>
+				</div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<div>
+					<AboutUs/>
+				</div>
+				<div ref={cooperationRef}>
+					<Cooperation/>
+				</div>
+				<div ref={advantagesRef}>
+					<Advantages/>
+				</div>
+				<div ref={partnersRef}>
+					<Partners/>
+				</div>
+				<div ref={loginRef}>
+					<Login/>
+				</div>
 			</div>
 			<Footer/>
 		</div>

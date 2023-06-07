@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./NewsComponent.module.sass"
-import img from "../../../../images/avatar.svg"
 import {NewsComponent} from "./NewsComponent"
 
 const notifications = [

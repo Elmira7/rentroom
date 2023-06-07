@@ -1,14 +1,12 @@
 import React from "react"
 import styles from "./Cooperation.module.sass"
-import img1 from "../../../../images/img_1.png"
-import img2 from "../../../../images/img_2.png"
 
 export const Cooperation = () => {
 	return (
 		<div className={styles.main}>
 			<div className={styles.main__block}>
 				<div className={styles.right}>
-					<img className={styles.img} src={img1} alt={"img"}/>
+					<img className={styles.img} src={"/images/img_1.png"} alt={"img"}/>
 				</div>
 				<div className={styles.main__block__text}>
 					<div className={styles.main__block__text__first}>Я арендодатель</div>
@@ -34,7 +32,7 @@ export const Cooperation = () => {
 
 				</div>
 				<div className={styles.left}>
-					<img className={styles.img} src={img2} alt={"img"}/>
+					<img className={styles.img} src={"/images/img_2.png"} alt={"img"}/>
 				</div>
 			</div>
 

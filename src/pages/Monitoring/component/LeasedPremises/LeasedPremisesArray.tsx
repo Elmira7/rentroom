@@ -13,6 +13,7 @@ export const LeasedPremisesArray = (props: LeasedPremisesArrayProps) => {
 			{props.LeasedPremise.map((props: LeasedPremisesProps, index: number) =>
 				<LeasedPremises
 					key={index}
+					id={props.id}
 					img={props.img}
 					name={props.name}
 				/>

@@ -1,20 +1,19 @@
 import React from "react"
 import {ReviewsArray} from "./ReviewsArray"
-import img from "../../../../images/avatar.svg"
 
 const reviewType = [
 	{
-		img: img,
+		img: "/images/avatar.svg",
 		name: "Имя",
 		review: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. "
 	},
 	{
-		img: img,
+		img: "/images/avatar.svg",
 		name: "Имя",
 		review: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. "
 	},
 	{
-		img: img,
+		img: "/images/avatar.svg",
 		name: "Имя",
 		review: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. "
 	}

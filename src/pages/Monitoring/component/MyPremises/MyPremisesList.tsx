@@ -1,13 +1,9 @@
 import React from "react"
 import {MyPremisesArray} from "./MyPremisesArray"
-import img1 from "../../../../images/MyPremises/img.png"
-import img2 from "../../../../images/MyPremises/img_1.png"
-import img3 from "../../../../images/MyPremises/img_2.png"
-import img4 from "../../../../images/MyPremises/img_3.png"
 
 const MyPremisesType = [
 	{
-		img: img1,
+		img: "/images/MyPremises/img.png",
 		name: "Объект #1",
 		status: "активен",
 		indebtedness: "нет",
@@ -15,7 +11,7 @@ const MyPremisesType = [
 		requests: 2
 	},
 	{
-		img: img2,
+		img: "/images/MyPremises/img_1.png",
 		name: "Объект #1",
 		status: "активен",
 		indebtedness: "нет",
@@ -23,7 +19,7 @@ const MyPremisesType = [
 		requests: 2
 	},
 	{
-		img: img3,
+		img: "/images/MyPremises/img_2.png",
 		name: "Объект #1",
 		status: "активен",
 		indebtedness: "нет",
@@ -31,7 +27,7 @@ const MyPremisesType = [
 		requests: 2
 	},
 	{
-		img: img4,
+		img: "/images/MyPremises/img_3.png",
 		name: "Объект #1",
 		status: "активен",
 		indebtedness: "нет",

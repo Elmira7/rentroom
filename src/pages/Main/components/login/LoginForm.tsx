@@ -57,7 +57,7 @@ export const LoginForm = () => {
                             <div className={styles.form__errors}>{errors.password}</div>}
 						<div>
 							<button type='submit' className={styles.form__but}>
-								<NavLink to="/authorized/Monitoring">Войти</NavLink></button>
+								<NavLink to="/authorized/Monitoring/MyPremises">Войти</NavLink></button>
 						</div>
 
 					</form>

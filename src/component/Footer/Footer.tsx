@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./Footer.module.sass"
-import icon from "../../images/icon.svg"
 
 
 export const Footer = () => {
@@ -13,16 +12,16 @@ export const Footer = () => {
 				</div>
 
 				<input placeholder={"Ваша почта.."} className={styles.footer__subscription__input}/>
-				<button className={styles.footer__subscription__button}>Подписка</button>
+				<button type={"button"} className={styles.footer__subscription__button}>Подписка</button>
 				<div className={styles.row}>
 					<div className={styles.bottom}>
 						<div className={styles.bl}>
-							<img alt={"icon"} src={icon}/>
+							<img alt={"icon"} src={"/images/icon.svg"}/>
 							<span className={styles.bottom__name}>RentRoom</span>
 						</div>
 						<div className={styles.bottom__text}>RentRoom 2023. All right reserved</div>
 					</div>
-					<img className={styles.img} src={"/images/img_1.png"}/>
+					<img className={styles.img} src={"/images/img_5.png"}/>
 				</div>
 
 			</div>

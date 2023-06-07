@@ -14,7 +14,7 @@ export const News: React.FC = () => {
 			</div>
 			<div className={styles.content}>
 				<div>
-					<img className={styles.img} alt={"календарь"} src={"/images/img.png"}/>
+					<img className={styles.img} alt={"календарь"} src={"/images/img_6.png"}/>
 				</div>
 				<NewsList/>
 			</div>

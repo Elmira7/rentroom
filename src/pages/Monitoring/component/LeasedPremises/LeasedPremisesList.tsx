@@ -1,32 +1,35 @@
 import React from "react"
 import {LeasedPremisesArray} from "./LeasedPremisesArray"
-import img1 from "../../../../images/LeasedPremises/img.png"
-import img2 from "../../../../images/LeasedPremises/img_1.png"
-import img3 from "../../../../images/LeasedPremises/img_2.png"
 
-const LeasedPremiseType = [
+export const LeasedPremiseType = [
 	{
-		img: img1,
+		id: 1,
+		img: "/images/LeasedPremises/img.png",
 		name: "Объект #1"
 	},
 	{
-		img: img2,
+		id: 2,
+		img: "/images/LeasedPremises/img_1.png",
 		name: "Баумана"
 	},
 	{
-		img: img3,
+		id: 3,
+		img: "/images/LeasedPremises/img_2.png",
 		name: "ЖК Яркий"
 	},
 	{
-		img: img3,
+		id: 4,
+		img: "/images/LeasedPremises/img_2.png",
 		name: "Объект #1"
 	},
 	{
-		img: img2,
+		id: 5,
+		img: "/images/LeasedPremises/img_1.png",
 		name: "Объект #2"
 	},
 	{
-		img: img1,
+		id: 6,
+		img: "/images/LeasedPremises/img.png",
 		name: "Объект #3"
 	}
 
